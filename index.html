@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 알람 앱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>웹 알람 설정</h1>
+        <label for="alarm-time">알람 시간 (분):</label>
+        <input type="number" id="alarm-time" min="1" max="1440" value="1">
+        
+        <label for="alarm-sound">알람 소리 업로드:</label>
+        <input type="file" id="alarm-sound" accept="audio/*">
+        
+        <label for="repeat-alarm">
+            <input type="checkbox" id="repeat-alarm"> 반복 알람 설정
+        </label>
+
+        <button id="set-alarm">알람 설정</button>
+        <button id="stop-alarm">알람 정지</button>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
